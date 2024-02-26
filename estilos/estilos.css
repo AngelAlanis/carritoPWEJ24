@@ -1,10 +1,29 @@
-		header {
-		    border: 1px solid black;
-		    width: 100%;
-		    height: 150px;
-		    background-color: burlywood
-		}
+header {
+  border: 1px solid black;
+  width: 100%;
+  height: 170px;
+  background-color: red;
+}
 
-		img {
-		    width: 100px;
-		}
+button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: yellow;
+  box-shadow: 0.3em 0.3em 0em orange;
+}
+
+#mainMenu {
+  background: none;
+  border: none;
+  cursor: default;
+}
+
+.buttons {
+	font-size: large;
+	color: black;
+}
+
+img {
+  width: 100px;
+}
