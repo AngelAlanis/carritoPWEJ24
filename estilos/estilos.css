@@ -1,8 +1,11 @@
 header {
   border: 1px solid black;
   width: 100%;
-  height: 170px;
-  background-color: red;
+  height: auto;
+  background-color: #E3000B;
+  display: flex;
+  justify-content:start;
+  align-items: center;
 }
 
 button {
@@ -25,4 +28,5 @@ button {
 
 img {
   width: 100px;
+  height: 100px;
 }
