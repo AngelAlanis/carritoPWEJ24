@@ -5,11 +5,27 @@ header {
 }
 
 header > nav {
-  color: white;
   padding: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+header > nav > menu {
+  display: flex;
+  font-weight: 600;
+  gap: 20px;
+  align-items: center;
+}
+
+header > nav > menu a {
+  color: white;
+}
+
+header > nav > menu a:hover {
+  font-size: 1.2em;
+  transition: font-size 0.3s;
 }
 
 header > nav > h3:first-child {
@@ -19,10 +35,6 @@ header > nav > h3:first-child {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-span[data-text] + span {
-    font-size: 1.5  em;
 }
 
 span[data-text="a"]::after {
@@ -40,7 +52,7 @@ span[data-text="a"]::after {
   -webkit-background-clip: text;
   background-clip: text;
   animation: rainbow 1s infinite;
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 @keyframes rainbow {

@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: "#000",
+              white: "#fff",
+            },
+          },
+        },
+      }; 
+    </script>
+    <style type="text/tailwindcss">
+      .btn {
+        @apply font-bold rounded py-2 px-4;
+      }
+
+      .btn-black {
+        @apply bg-black text-white
+      }
+    </style>
     <link rel="stylesheet" href="styles/main.css" />
     <title>Document</title>
   </head>
@@ -15,11 +36,12 @@
           <span>mantle</span>
         </h3>
         <menu>
-          <li>Angel deal</li>
-          <li>Pray</li>
-          <li>Repent</li>
+          <li><a href="#">Angel deal</a></li>
+          <li><a href="#">Pray</a></li>
+          <li><a href="#">Repent</a></li>
+          <li><a href="#">Donate</a></li>
         </menu>
-        <button>Contact us</button>
+        <button class="btn btn-black">Contact us</button>
       </nav>
       <div></div>
     </header>
